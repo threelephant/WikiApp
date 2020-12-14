@@ -1,0 +1,11 @@
+﻿@{
+    var wordArticles = (List<WordArticle>)ViewBag.WordArticles;
+}
+
+<h2>@wordArticles[0].Word</h2>
+
+@foreach (var article in wordArticles)
+{
+    <p>@article.Text</p>
+    <p><a asp-action="History" asp-controller="Home" asp-route-id="@article.Id">История изменения статьи</a></p>
+}

@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var letter in (List<WordsByFirstLetter>) ViewBag.Words)
+{
+    <h3>@letter.Alphabet</h3>
+    foreach (var word in letter.SubList)
+    {
+        <p><a asp-action="Word" asp-controller="Home" asp-route-id="@word.IdСлова">@word.Слово</a></p>
+    }
+}

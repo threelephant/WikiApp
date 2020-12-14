@@ -1,0 +1,14 @@
+﻿@{
+    var history = (List<HistoryArticle>) ViewBag.History;
+}
+
+<h2>История статьи</h2>
+@foreach (var change in history)
+{
+    <p>@change.Article</p>
+    <p>Автор: @change.Author</p>
+    <p>Дата заявки: @change.DateRequest</p>
+    <p>Дата рассмотрения: @change.Date</p>
+    <p>Рассмотрел: @change.Moderator</p>
+    <br><br>
+}
