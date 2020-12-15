@@ -1,0 +1,17 @@
+﻿@model ИсторияПравокСтатьи
+
+<h2>Изменить заявку</h2>
+
+<p>Изменяемый текст: @ViewBag.ChangedText</p>
+<p>Изменяемая заявка: @ViewBag.Text</p>
+
+<form asp-action="Update" asp-controller="Request" asp-antiforgery="true">
+    <div>
+        <label for="text">Новая заявка</label>
+        <textarea class="materialize-textarea" id="text" name="text"></textarea>
+    </div>
+    
+    <input type="hidden" name="id" value="@ViewBag.Id" />
+    <button class="btn btn-primary" type="submit" name="action">Изменить заявку</button>
+</form>
+

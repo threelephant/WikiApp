@@ -1,0 +1,25 @@
+﻿@model List<StatsModel>
+
+<h2>Статистика пользователей за 5 лет</h2>
+
+<table class="table">
+    <tr>
+        <th scope="col">Пользователь</th>
+        <th scope="col">Год</th>
+        <th scope="col">Месяц</th>
+        <th scope="col">Заявление на правки</th>
+        <th scope="col">Модератор</th>
+        <th scope="col">Принятые правки</th>
+    </tr>
+@foreach (var stats in Model)
+{
+    <tr>
+        <td>@stats.User</td>
+        <td>@stats.Year</td>
+        <td>@stats.Month</td>
+        <td>@stats.Requests</td>
+        <td>@stats.Moderators</td>
+        <td>@stats.AcceptedRequests</td>
+    </tr>
+}
+</table>

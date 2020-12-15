@@ -15,6 +15,7 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="RequestController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
@@ -45,6 +46,8 @@
           <e p="HistoryArticle.cs" t="Include" />
           <e p="LoginModel.cs" t="Include" />
           <e p="RegisterModel.cs" t="Include" />
+          <e p="Requests.cs" t="Include" />
+          <e p="StatsModel.cs" t="Include" />
           <e p="WordArticle.cs" t="Include" />
           <e p="WordsByFirstLetter.cs" t="Include" />
         </e>
@@ -59,7 +62,13 @@
             <e p="History.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+            <e p="Stats.cshtml" t="Include" />
             <e p="Word.cshtml" t="Include" />
+          </e>
+          <e p="Request" t="Include">
+            <e p="Add.cshtml" t="Include" />
+            <e p="Update.cshtml" t="Include" />
+            <e p="UserRequests.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />

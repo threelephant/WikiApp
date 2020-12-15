@@ -2,13 +2,23 @@
     var history = (List<HistoryArticle>) ViewBag.History;
 }
 
+<a asp-action="Word" asp-controller="Home" asp-route-id="@history[0].WordId" class="btn btn-primary" role="button">Назад к слову "@history[0].Word"</a><br>
 <h2>История статьи</h2>
+<table class="table">
+    <tr>
+        <th scope="col">Дата принятия</th>
+        <th scope="col">Текст статьи</th>
+        <th scope="col">Автор</th>
+        <th scope="col">Дата заявки</th>
+        <th scope="col">Рассмотрел</th>
+    </tr>
 @foreach (var change in history)
 {
-    <p>@change.Article</p>
-    <p>Автор: @change.Author</p>
-    <p>Дата заявки: @change.DateRequest</p>
-    <p>Дата рассмотрения: @change.Date</p>
-    <p>Рассмотрел: @change.Moderator</p>
-    <br><br>
-}
+    <tr>
+        <td>@change.Date</td>
+        <td>@change.Article</td>
+        <td>@change.Author</td>
+        <td>@change.DateRequest</td>
+        <td>@change.Moderator</td>
+    </tr>
+}</table>

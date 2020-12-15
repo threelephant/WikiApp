@@ -6,44 +6,94 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41a6bd2-4090-4e25-8f79-f0b5b1607d1b" name="Default Changelist" comment="" />
+    <list default="true" id="e41a6bd2-4090-4e25-8f79-f0b5b1607d1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WikiApp/Controllers/RequestController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WikiApp/ViewModels/Requests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WikiApp/ViewModels/StatsModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WikiApp/Views/Home/Stats.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WikiApp/Views/Request/Add.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WikiApp/Views/Request/Update.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WikiApp/Views/Request/UserRequests.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WikiApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WikiApp/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WikiApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WikiApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiApp/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WikiApp/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiApp/ViewModels/HistoryArticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WikiApp/ViewModels/HistoryArticle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiApp/Views/Home/History.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WikiApp/Views/Home/History.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiApp/Views/Home/Word.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WikiApp/Views/Home/Word.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WikiApp/Views/Shared/_Layout.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/441B1F1D-0007-4533-BF4B-294EFD4F790B/194/ObjectMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/441B1F1D-0007-4533-BF4B-294EFD4F790B/F3/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Петр/source/repos/WikiApp/WikiApp/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WikiApp/Views/Request/Add.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/WikiApp/Views/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/WikiApp/ViewModels/WordsByFirstLetter.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3dee2769-545f-483b-b49a-6e930591c629/console.sql" />
         <option value="$PROJECT_DIR$/WikiApp/Views/Home/Index.cshtml" />
-        <option value="$PROJECT_DIR$/WikiApp/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/WikiApp/Utils/AnonymousOnly.cs" />
         <option value="$PROJECT_DIR$/WikiApp/Controllers/AccountController.cs" />
-        <option value="$PROJECT_DIR$/WikiApp/ViewModels/HistoryArticle.cs" />
-        <option value="$PROJECT_DIR$/WikiApp/Views/Home/History.cshtml" />
         <option value="$PROJECT_DIR$/WikiApp/ViewModels/WordArticle.cs" />
-        <option value="$PROJECT_DIR$/WikiApp/Views/Home/Word.cshtml" />
-        <option value="$PROJECT_DIR$/WikiApp/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/WikiApp/.gitignore" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3dee2769-545f-483b-b49a-6e930591c629/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3dee2769-545f-483b-b49a-6e930591c629/console.sql" />
+        <option value="$PROJECT_DIR$/WikiApp/ViewModels/HistoryArticle.cs" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Home/Request.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/ViewModels/Requests.cs" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Home/UserRequests.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Controllers/Request.cs" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Request/Request.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Request/Update.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Controllers/RequestController.cs" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Home/StatsModel.cs" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Home/Stats.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Request/UserRequests.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Home/History.cshtml" />
+        <option value="$PROJECT_DIR$/WikiApp/Views/Home/Word.cshtml" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1le37URpNzzBVC59sZS7Chz9iam" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498452" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3003096" />
@@ -95,7 +145,9 @@
       <option name="presentableId" value="Default" />
       <updated>1607943601054</updated>
       <workItem from="1607943723914" duration="9574000" />
-      <workItem from="1607958051200" duration="14484000" />
+      <workItem from="1607958051200" duration="15150000" />
+      <workItem from="1608004937905" duration="12093000" />
+      <workItem from="1608031419631" duration="15888000" />
     </task>
     <servers />
   </component>
@@ -104,6 +156,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -116,86 +180,86 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="601" height="464" key="DebuggerActiveHint/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607960033777" />
-    <state width="1323" height="16" key="GridCell.Tab.0.bottom" timestamp="1607973383015">
+    <state width="1323" height="109" key="GridCell.Tab.0.bottom" timestamp="1608054865368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="16" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607973383015" />
-    <state width="1323" height="16" key="GridCell.Tab.0.center" timestamp="1607973383015">
+    <state width="1323" height="109" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608054865368" />
+    <state width="1323" height="109" key="GridCell.Tab.0.center" timestamp="1608054865368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="16" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607973383015" />
-    <state width="1323" height="16" key="GridCell.Tab.0.left" timestamp="1607973383015">
+    <state width="1323" height="109" key="GridCell.Tab.0.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608054865368" />
+    <state width="1323" height="109" key="GridCell.Tab.0.left" timestamp="1608054865368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="16" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607973383015" />
-    <state width="1323" height="16" key="GridCell.Tab.0.right" timestamp="1607973383015">
+    <state width="1323" height="109" key="GridCell.Tab.0.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608054865368" />
+    <state width="1323" height="109" key="GridCell.Tab.0.right" timestamp="1608054865368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="16" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607973383015" />
-    <state width="1323" height="361" key="GridCell.Tab.1.bottom" timestamp="1607971017172">
+    <state width="1323" height="109" key="GridCell.Tab.0.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608054865368" />
+    <state width="1323" height="52" key="GridCell.Tab.1.bottom" timestamp="1608023183454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.1.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.1.center" timestamp="1607971017171">
+    <state width="1323" height="52" key="GridCell.Tab.1.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183454" />
+    <state width="1323" height="52" key="GridCell.Tab.1.center" timestamp="1608023183454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.1.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017171" />
-    <state width="1323" height="361" key="GridCell.Tab.1.left" timestamp="1607971017171">
+    <state width="1323" height="52" key="GridCell.Tab.1.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183454" />
+    <state width="1323" height="52" key="GridCell.Tab.1.left" timestamp="1608023183454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.1.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017171" />
-    <state width="1323" height="361" key="GridCell.Tab.1.right" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.1.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183454" />
+    <state width="1323" height="52" key="GridCell.Tab.1.right" timestamp="1608023183454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.1.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.2.bottom" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.1.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183454" />
+    <state width="1323" height="52" key="GridCell.Tab.2.bottom" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.2.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.2.center" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.2.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.2.center" timestamp="1608023183454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.2.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.2.left" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.2.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183454" />
+    <state width="1323" height="52" key="GridCell.Tab.2.left" timestamp="1608023183454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.2.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.2.right" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.2.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183454" />
+    <state width="1323" height="52" key="GridCell.Tab.2.right" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.2.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.3.bottom" timestamp="1607971017173">
+    <state width="1323" height="52" key="GridCell.Tab.2.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.3.bottom" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.3.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017173" />
-    <state width="1323" height="361" key="GridCell.Tab.3.center" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.3.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.3.center" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.3.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.3.left" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.3.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.3.left" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.3.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.3.right" timestamp="1607971017172">
+    <state width="1323" height="52" key="GridCell.Tab.3.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.3.right" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.3.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017172" />
-    <state width="1323" height="361" key="GridCell.Tab.4.bottom" timestamp="1607971017174">
+    <state width="1323" height="52" key="GridCell.Tab.3.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.4.bottom" timestamp="1608023183456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.4.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017174" />
-    <state width="1323" height="361" key="GridCell.Tab.4.center" timestamp="1607971017173">
+    <state width="1323" height="52" key="GridCell.Tab.4.bottom/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183456" />
+    <state width="1323" height="52" key="GridCell.Tab.4.center" timestamp="1608023183456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.4.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017173" />
-    <state width="1323" height="361" key="GridCell.Tab.4.left" timestamp="1607971017173">
+    <state width="1323" height="52" key="GridCell.Tab.4.center/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183456" />
+    <state width="1323" height="52" key="GridCell.Tab.4.left" timestamp="1608023183455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.4.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017173" />
-    <state width="1323" height="361" key="GridCell.Tab.4.right" timestamp="1607971017173">
+    <state width="1323" height="52" key="GridCell.Tab.4.left/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183455" />
+    <state width="1323" height="52" key="GridCell.Tab.4.right" timestamp="1608023183456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="361" key="GridCell.Tab.4.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1607971017173" />
+    <state width="1323" height="52" key="GridCell.Tab.4.right/0.0.1366.728/-1440.0.1440.860@0.0.1366.728" timestamp="1608023183456" />
     <state width="196" height="455" key="HiddenNamespacesPopup" timestamp="1607944077282">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -225,7 +289,7 @@
     <watches-manager>
       <configuration name="LaunchSettings">
         <watch expression="ViewBag.Words" language="Razor" />
-        <watch expression="groups.ToList()" language="C#" />
+        <watch expression="history.ToList()" language="C#" />
       </configuration>
     </watches-manager>
   </component>

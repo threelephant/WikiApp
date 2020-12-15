@@ -1,0 +1,31 @@
+﻿@model List<Requests>
+
+<h2>Рассматриваемые заявки пользователя @User.Identity.Name</h2>
+<table class="table">
+    <tr>
+        <th scope="col">Слово</th>
+        <th scope="col">Статья</th>
+        <th scope="col">Текст изменения</th>
+        <th scope="col">Дата заявки</th>
+        <th scope="col">Изменить</th>
+        <th scope="col">Удалить</th>
+    </tr>
+    @foreach (var request in @Model)
+    {
+        <tr>
+            <td><a asp-action="Word" asp-controller="Home" asp-route-id="@request.WordId">@request.Word</a></td>
+            <td><a asp-action="History" asp-controller="Home" asp-route-id="@request.ArticleId">История статьи</a></td>
+            <td>@request.Text</td>
+            <td>@request.DateRequest</td>
+            <td>
+                <a asp-action="Update" asp-controller="Request" asp-route-id="@request.Id" class="btn btn-primary" role="button">Изменить заявку</a> 
+            </td>
+            <td>
+                <form asp-action="Delete" asp-controller="Request" asp-antiforgery="true" method="post">
+                    <input type="hidden" name="id" value="@request.Id"/>
+                    <button class="btn btn-danger" type="submit" name="action">Удалить заявку</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>

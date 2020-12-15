@@ -3,9 +3,18 @@
 }
 
 <h2>@wordArticles[0].Word</h2>
-
+<table class="table">
+<tr>
+    <th scope="col">Текст статьи</th>
+    <th scope="col">История изменений</th>
+    <th scope="col">Изменить</th>
+</tr>
 @foreach (var article in wordArticles)
 {
-    <p>@article.Text</p>
-    <p><a asp-action="History" asp-controller="Home" asp-route-id="@article.Id">История изменения статьи</a></p>
+<tr>
+    <td>@article.Text</td>
+    <td><a asp-action="History" asp-controller="Home" asp-route-id="@article.Id">История изменения статьи</a></td>
+    <td><a asp-action="Add" asp-controller="Request" asp-route-id="@article.Id" class="btn btn-primary" role="button">Изменить</a></td> 
+</tr>
 }
+</table>
