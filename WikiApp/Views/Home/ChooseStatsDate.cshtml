@@ -1,0 +1,11 @@
+﻿<h2>Выбрать период</h2>
+
+<form class="w-25" asp-action="Stats" asp-controller="Home" asp-antiforgery="true">
+    <div>
+        <label for="date">Страна</label>
+        <select class="form-control" name="date" id="date" asp-items="ViewBag.Dates"></select>
+    </div>
+    <div>
+        <input class="btn btn-primary mt-4" type="submit" value="Выбрать" />
+    </div>
+</form>

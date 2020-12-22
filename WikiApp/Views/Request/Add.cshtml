@@ -1,14 +1,14 @@
 ﻿@{
     var change = (HistoryArticle) ViewBag.lastChange;
 }
-<h2>Правка статьи для слова "@change.Word"</h2>
+<h2 class="mb-4">Правка статьи для слова "@change.Word"</h2>
 <p><i>Прошлая правка:</i> @change.Article</p>
-<form asp-action="Add" asp-controller="Request" asp-antiforgery="true">
+<form class="w-50" asp-action="Add" asp-controller="Request" asp-antiforgery="true">
     <div>
         <label for="text">Новая заявка</label>
-        <textarea class="materialize-textarea" name="text"></textarea>
+        <textarea class="form-control mb-2" name="text"></textarea>
     </div>
     
     <input type="hidden" name="id" value="@change.Id" />
-    <button class="btn btn-primary" type="submit" name="action">Подать заявку</button>
+    <button class="btn btn-primary mt-2" type="submit" name="action">Подать заявку</button>
 </form>

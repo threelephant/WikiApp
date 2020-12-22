@@ -24,7 +24,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Request" asp-action="UserRequests">Рассматриваемые правки</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Stats">Статистика пользователей</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ChooseStatsDate">Статистика пользователей</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Выйти</a>
@@ -52,7 +52,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - WikiApp
+            &copy; @DateTime.Now.Year - WikiApp
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

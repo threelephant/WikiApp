@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using WikiApp.Models;
 using WikiApp.ViewModels;
@@ -121,8 +122,53 @@ namespace WikiApp.Controllers
             return View();
         }
 
-        public IActionResult Stats()
+        public IActionResult ChooseStatsDate()
         {
+            var dates = new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Последняя неделя", Value = Dates.Week.ToString() },
+                new SelectListItem { Text = "Последний месяц", Value = Dates.Month.ToString() },
+                new SelectListItem { Text = "Последние 6 месяцев", Value = Dates.SixMonth.ToString() },
+                new SelectListItem { Text = "Последний год", Value = Dates.Year.ToString() },
+                new SelectListItem { Text = "Последние 5 лет", Value = Dates.FiveYear.ToString() },
+            };
+
+            ViewBag.Dates = dates;
+
+            return View();
+        }
+
+        public IActionResult Stats(Dates date = Dates.FiveYear)
+        {
+            var stats = _statsModels(date);
+
+            var dateText = date switch
+            {
+                Dates.Week => "последнюю неделю",
+                Dates.Month => "последний месяц",
+                Dates.SixMonth => "последние 6 месяцев",
+                Dates.Year => "последний год",
+                Dates.FiveYear => "последние 5 лет",
+                _ => throw new ArgumentException()
+            };
+
+            ViewBag.Date = dateText;
+
+            return View(stats.ToList());
+        }
+
+        private List<StatsModel> _statsModels(Dates date)
+        {
+            var chooseDate = date switch
+            {
+                Dates.Week => DateTime.Now.AddDays(-7),
+                Dates.Month => DateTime.Now.AddMonths(-1),
+                Dates.SixMonth => DateTime.Now.AddMonths(-6),
+                Dates.Year => DateTime.Now.AddYears(-1),
+                Dates.FiveYear => DateTime.Now.AddYears(-5),
+                _ => throw new ArgumentException()
+            };
+
             var requests = db.Пользователиs.Join(db.ИсторияПравокСтатьиs,
                     u => u.Логин,
                     h => h.Логин,
@@ -171,7 +217,7 @@ namespace WikiApp.Controllers
                 .Union(moderators.AsEnumerable());
 
             var stats = statsDates.Where(s =>
-                s.Date >= DateTime.Now.AddYears(-5)).GroupBy(g =>
+                s.Date >= chooseDate).GroupBy(g =>
                 new {g.User, g.Date.Month, g.Date.Year}).Select(s => new StatsModel
             {
                 User = s.Key.User,
@@ -184,13 +230,7 @@ namespace WikiApp.Controllers
                 .OrderBy(s => s.Year)
                 .ThenBy(s => s.Month);
 
-            return View(stats.ToList());
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return stats.ToList();
         }
 
         private bool IsAnyApprovedArticles(Guid wordId)

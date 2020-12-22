@@ -4,24 +4,24 @@
 
 <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
     <div class="validation" asp-validation-summary="ModelOnly"></div>
-    <div>
-        <div>
-            <label asp-for="Login">Введите Email</label><br />
-            <input type="text" asp-for="Login" />
+    <div class="w-25">
+        <div class="form-group">
+            <label asp-for="Login">Введите логин</label><br />
+            <input type="text" asp-for="Login" class="form-control" />
             <span asp-validation-for="Login" />
         </div>
-        <div>
+        <div class="form-group">
             <label asp-for="Password">Введите пароль</label><br />
-            <input asp-for="Password" />
+            <input asp-for="Password" class="form-control" />
             <span asp-validation-for="Password" />
         </div>
-        <div>
+        <div class="form-group">
             <label asp-for="ConfirmPassword">Повторите пароль</label><br />
-            <input asp-for="ConfirmPassword" />
+            <input asp-for="ConfirmPassword" class="form-control" />
             <span asp-validation-for="ConfirmPassword" />
         </div>
-        <div>
-            <input type="submit" value="Регистрация" />
+        <div class="form-group">
+            <input type="submit" value="Регистрация" class="btn btn-primary" />
         </div>
     </div>
 </form>

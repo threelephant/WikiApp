@@ -91,6 +91,12 @@ namespace WikiApp.Controllers
         public IActionResult Update(Guid id)
         {
             var change = db.ИсторияПравокСтатьиs.FirstOrDefault(h => h.IdПравки == id);
+
+            if (change == null || change?.Логин != User.Identity.Name)
+            {
+                return NotFound();
+            }
+            
             var changedText = db.ИсторияПравокСтатьиs.FirstOrDefault(h => h.IdПравки == change.FkIdПравки)?.Текст;
 
             ViewBag.ChangedText = changedText;
@@ -105,7 +111,13 @@ namespace WikiApp.Controllers
         public IActionResult Update(Guid id, string text)
         {
             var change = db.ИсторияПравокСтатьиs.FirstOrDefault(h => h.IdПравки == id);
-            if (change != null) change.Текст = text;
+            
+            if (change == null || change?.Логин != User.Identity.Name)
+            {
+                return NotFound();
+            }
+            
+            change.Текст = text;
 
             db.SaveChanges();
             return RedirectToAction("UserRequests", "Request");

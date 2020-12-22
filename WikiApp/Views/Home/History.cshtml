@@ -2,7 +2,7 @@
     var history = (List<HistoryArticle>) ViewBag.History;
 }
 
-<a asp-action="Word" asp-controller="Home" asp-route-id="@history[0].WordId" class="btn btn-primary" role="button">Назад к слову "@history[0].Word"</a><br>
+<a asp-action="Word" asp-controller="Home" asp-route-id="@history[0].WordId" class="btn btn-primary mb-3" role="button">Назад к слову "@history[0].Word"</a><br>
 <h2>История статьи</h2>
 <table class="table">
     <tr>
